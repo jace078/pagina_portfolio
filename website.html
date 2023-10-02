@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c19a6b;
+        }
+
+        .tabs {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #704d2cf5;
+            cursor: pointer;
+        }
+
+        .tab:hover {
+            background-color: #0f4b0a;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tab" onclick="openTab('tab1')"><b>Dit ben ik</b></li>
+        <li class="tab" onclick="openTab('tab2')"><b>Mijn werk</b></li>
+        <li class="tab" onclick="openTab('tab3')"><b>Codeertalen</b></li>
+        <li class="tab" onclick="openTab('tab4')"><b>Socials</b></li> 
+    </ul>
+
+    <div id="tab1" class="tab-content active">
+        <h1>Wie ben ik?</h1>
+        <p>Welkom in mijn digitale portfolio!<p>
+            <p> Ik ben Dylan, maar vriendenen familie noemen me graag "Jace."<p>
+            <p> Met mijn 19 jaar jonge leeftijd ben ik vol enthousiasme en toewijding bezig met mijn studie Software Development aan het Da Vinci college. <p>
+            <p>Mijn passie voor het creëren van digitale oplossingen heeft me geleid naar een reeks programmeertalen, waaronder Java, JavaScript, HTML en Python.  <p>
+            <p>Ik nodig je graag uit om meer te ontdekken over mijn projecten en prestaties in de wereld van softwareontwikkeling.</p>
+            <p>Dus, laten we samen een kijkje nemen in mijn reis en de creatieve mogelijkheden die ik te bieden heb!<p>
+        <img src="JAVA_CODING.jpg" width="750" height="550" alt="Java coding">
+
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <h1>Mijn werk</h1>
+        <h2><B>JAVA / JS :</B></h2>
+        <p>Minecraft plugins. Ik heb meerdere minecraft plugins gemaakt en aan meegeholpen zoals de bekende "Empire Wand". 
+        </p>
+        <p>Verder heb ik ook een kleine startende minecraft servers geholpen met kleine plugins te programmeren en in te stellen zoals een custom made skyblock.
+        </p>
+        <p> Ook heb ik 1 jaar lang meegeholpen als developer bij een wat grotere server zoals dodocraft.
+        </p>
+        <img src="Minecraft.jpg" width="500" height="200" alt="minecraft">
+        <p> </p>
+        <p> </p>
+        <h2> PYTHON :</h2>
+        <p>Verder heb ik kleine programma's gemaakt zoals:</p>
+        <p> -  boter, kaas en eieren</p>
+        <p> -  steen, papier en schaar   </p>
+        <p> -  galgje  </p>
+        <p> -  Pong game   </p>
+        <p> -  timer  </p>
+        <p> -  discord bot   </p>
+        <p> -  password cracker   </p>
+
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <h1>Codeertalen</h1>
+        <p>De codeertalen waar ik me op dit moment voornamelijk mee bezig houd:</p>
+        <ul>
+            <li>
+                <h2>Java</h2>
+                <img src="JAVA.png" width="400" height="500" alt="Java">
+            </li>
+            <li>
+                <h2>JavaScript</h2>
+                <img src="JS.png" width="400" height="400" alt="JavaScript">
+            </li>
+            <li>
+                <h2>Python</h2>
+                <img src="python.png" width="600" height="400" alt="Python">
+            </li>
+            <li>
+                <h2>HTML</h2>
+                <img src="HTML.png" width="400" height="400" alt="HTML">
+            </li>
+        </ul>
+    </div>
+    
+    <div id="tab4" class="tab-content">
+        <h1>Socials</h1>
+        <h2>Instagram</h2>
+        <img src="instagram.png" width="300" height="300" alt="Instagram">
+        <a href="https://www.instagram.com/coding_jace078/" > 
+            click here to go the instagram page
+        </a>
+
+        <h2>Snapchat</h2>
+        <img src="snapchat_user.png" width="300" height="300" alt="Snapchat">
+        <a href="https://t.snapchat.com/K0sr7NTO" > 
+            click here to go the snapchat page
+        </a>
+        <h2>GitHub</h2>
+        <img src="GitHub.png" width="300" height="300" alt="GitHub">
+        <a href="https://github.com/jace078/projects" > 
+            click here to go the github page
+        </a>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
